@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スペースインベーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-info">
+            <div id="score">スコア: 0</div>
+            <div id="stage">ステージ: 1</div>
+            <div id="hp">HP: 5</div>
+            <div id="lives">残機: 3</div>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>ゲームオーバー</h2>
+            <p>最終スコア: <span id="final-score">0</span></p>
+            <button id="restart-button">もう一度プレイ</button>
+        </div>
+        <div id="instructions">
+            <p>← → : 移動 | スペースキー : 発射</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
